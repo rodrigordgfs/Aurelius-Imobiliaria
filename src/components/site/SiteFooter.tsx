@@ -56,10 +56,16 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-line pt-8 md:flex-row md:items-center">
-          <div className="flex flex-wrap items-center gap-6 text-[10px] font-mono uppercase tracking-widest text-ink-dim">
-            <span>© {new Date().getFullYear()} Aurelius Imobiliaria Ltda.</span>
-            <span>CRECI-RS 12345-J</span>
-            <span>Porto Alegre, RS</span>
+          <div className="space-y-3">
+            <div className="flex flex-wrap items-center gap-6 text-[10px] font-mono uppercase tracking-widest text-ink-dim">
+              <span>© {new Date().getFullYear()} Aurelius Imobiliaria Ltda.</span>
+              <span>CRECI-RS 12345-J</span>
+              <span>Porto Alegre, RS</span>
+            </div>
+            <p className="text-[10px] font-mono uppercase tracking-widest text-ink-dim">
+              Site criado por{" "}
+              <span className="text-ink-muted transition hover:text-gold">Shinoda Labs</span>
+            </p>
           </div>
           <div className="flex gap-2">
             {["𝕏", "In", "IG"].map((s) => (
